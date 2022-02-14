@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+{{> head}}
+
+	<main class="page login-page">
+		<section class="clean-block clean-form dark">
+			<div class="container">
+				<div class="block-heading">
+					<h2 style="color: #94d4b4;">New Patient</h2>
+					<p>Introduce the following data to create a new patient</p>
+				</div>
+				<form style="border-top-color: rgb(151, 214, 181);">
+					<div class="form-group">
+						<label for="Name">Name</label><input type="text"
+							class="form-control" id="name"
+							placeholder="Name">
+					</div>
+					<div class="form-group">
+						<label for="Surname1">First surname</label><input type="text"  class="form-control" id="surname1"
+							placeholder="First surname">
+					</div>
+					<div class="form-group">
+						<label for="Surname2">Second surname</label><input type="text"
+							class="form-control" id="surname2"
+							placeholder="Second surname">
+					</div>
+					<div class="form-group">
+						<label for="Age">Age</label><input type="text"
+							class="form-control" id="age"
+							placeholder="Age">
+					</div>
+					<div class="form-group">
+						<label for="Username">Username</label><input type="text"
+							class="form-control" id="username"
+							placeholder="Username">
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label><input type="password"
+							class="form-control" id="password" placeholder="Password">
+							<small id="Privacy" class="form-text text-muted">Don't worry, your data are safe with us ;)</small>
+					</div>
+					<div class="form-group">
+						<label for="email">Mail</label><input type="text"
+							class="form-control" id="email"
+							placeholder="Mail">
+					</div>
+					<div class="form-group">
+						<label for="dni">ID</label><input type="text"
+							class="form-control" id="dni" placeholder="Introduce your ID">
+					</div>
+					<button onclick="createPaciente()" type="submit"
+						class="btn btn-primary btn-block"
+						style="border-color: rgba(255, 255, 255, 0.4); background: rgb(255, 193, 105); color: #000000;">Create</button>
+
+					<button onclick="location.href='javascript:history.back()'" class="btn btn-primary btn-block" type="button"
+							style="background: rgb(255, 193, 105); color: #000000; border-color: rgb(255, 193, 105);text-align: center;">
+						Back
+					</button>
+
+				</form>
+			</div>
+	
+		</section>
+		<footer class="footer-basic">
+			<div class="social">
+				<a href="https://www.instagram.com/"><i class="icon ion-social-instagram"></i></a><a href="https://es-es.facebook.com/"><i
+					class="icon ion-social-facebook"></i></a><a href="https://twitter.com"><i
+					class="icon ion-social-twitter"></i></a>
+			</div>
+			<ul class="list-inline">
+				<li class="list-inline-item"><a href="/">Home</a></li>
+				<li class="list-inline-item"></li>
+				<li class="list-inline-item"><a href="faq.html">FAQ
+						</a></li>
+				<li class="list-inline-item"><a href="politica.html">Privacy
+					Policy</a></li>
+			</ul>
+			<p class="copyright">helseVITA © 2021</p>
+		</footer>
+	</main>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+	<script src="assets/js/smoothproducts.min.js"></script>
+	<script src="assets/js/theme.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

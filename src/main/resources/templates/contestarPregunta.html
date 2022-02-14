@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<script src="/assets/js/app.js"></script>
+
+{{> head}}
+<main class="page contestarPreguntas-page">
+	<section class="clean-block clean-faq dark"
+		style="background: rgb(151, 214, 181);">
+		<div class="container">
+			<div class="block-heading">
+				<h2 style="color: #000000; margin-top: 50px">Answer question</h2>
+			</div>
+ {{#question}}
+  {{{cosa}}}
+  {{/question}}
+  <form  style="border-top-color: rgb(151, 214, 181);" >
+   {{#question}}
+  	<input type="hidden" class="form-control" id="id_question"  value="{{id}}">			
+  {{/question}}	
+		<textarea name="editor" id="editor" >
+			Answer here the question
+		</textarea>
+		<button onclick="submitAnswer();" class="btn btn-primary btn-block" 
+                        style="border-color: rgba(255, 255, 255, 0.4); background: rgb(255, 193, 105); color: #000000;">
+                    Submit
+                </button>
+	</form>
+
+    <script>CKEDITOR.replace('editor', {
+      height: 200,
+      // By default, some basic text styles buttons are removed in the Standard preset.
+      // The code below resets the default config.removeButtons setting.
+      removeButtons: '',
+      // Custom style definition for the Bold feature.
+      coreStyles_bold: {
+        element: 'b',
+        overrides: 'strong'
+      },
+      // Custom style definition for the Italic feature.
+      coreStyles_italic: {
+        element: 'i',
+        overrides: 'em'
+      }
+    });
+    
+    		</script>
+			
+				</div>
+				
+			</div>
+
+</main>
+{{> footer}}
